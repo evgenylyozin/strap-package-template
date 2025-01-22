@@ -1,0 +1,24 @@
+{
+  "name": "[PACKAGE_NAME_HERE]",
+  "version": "0.0.0",
+  "description": "[PACKAGE_DESCRIPTION_HERE]",
+  "repository": {
+    "type": "git",
+    "url": "[REPOSITORY_URL_HERE]"
+  },
+  "scripts": {
+    "build": "webpack build --mode=production",
+    "test": "vitest run",
+    "lint": "eslint ./src",
+    "prettify": "prettier . --write",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky",
+    "stage-updated": "git add -u",
+    "prepare-release": "npm run typecheck && npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "[PACKAGE_KEYWORDS_HERE]"
+  ],
+  "author": "[AUTHOR_NAME_HERE] <[AUTHOR_EMAIL_HERE]>",
+  "license": "[LICENSE_TYPE_HERE](MIT OR OTHER)"
+}
