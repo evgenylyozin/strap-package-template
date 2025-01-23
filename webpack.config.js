@@ -1,6 +1,5 @@
 // webpack.config.js
 const path = require("path");
-const ShebangPlugin = require("webpack-shebang-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -13,14 +12,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [new ShebangPlugin()], // ENSURE THE SHEBANG IS IN THE OUTPUT AND THE FILE IS EXECUTABLE
   resolve: {
     extensions: [".ts", ".js"],
   },
-  target: "node",
+  target: false, // use ES2015 for both Node and Browser by default
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
   },
-  // Additional configuration goes here
 };
