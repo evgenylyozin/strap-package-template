@@ -1,10 +1,11 @@
+// @ts-check
+
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
+export default tseslint.config(
   eslint.configs.recommended,
-  tseslint.configs.strictTypeChecked,
+  tseslint.configs.recommendedTypeChecked,
   {
     languageOptions: {
       parserOptions: {
@@ -12,5 +13,13 @@ export default [
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    ignores: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/.git/**",
+      "**/.husky/**",
+      "eslint.config.mjs",
+      "webpack.config.js",
+    ],
   },
-];
+);
