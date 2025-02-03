@@ -12,6 +12,8 @@ git clone {YOUR_REPO_URL_HERE}
 
 Prerequisite: Node {REQUIRED NODE VERSION HERE}
 
+If the package-lock file is available, run:
+
 ```bash
 npm ci
 ```
