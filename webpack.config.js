@@ -15,7 +15,7 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-  target: false, // use ES2015 for both Node and Browser by default
+  target: false,
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
