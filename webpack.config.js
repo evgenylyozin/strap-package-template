@@ -15,7 +15,7 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-  target: false,
+  target: "node",
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
