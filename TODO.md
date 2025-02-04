@@ -11,6 +11,22 @@ Go through these files and add the information about yourself and the package:
 - DEV.README.md
 - README.md
 
+### If the husky pre-commit hook is not needed
+
+Run:
+
+```bash
+npm run remove-husky
+```
+
+### If the publish to npm workflow is not needed
+
+Run:
+
+```bash
+npm run remove-publish-workflow
+```
+
 ### Publish to NPM workflow setup
 
 If you chose to include npm publish workflow then for it to work properly do the following steps:

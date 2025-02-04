@@ -1,8 +1,0 @@
-#!/bin/sh
-exit 0
-npm run prettify
-npm run stage-updated
-npm run typecheck
-npm run lint
-npm run test
-npm run build

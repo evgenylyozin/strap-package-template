@@ -17,6 +17,6 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
       - run: npm run prepare-release
-      - run: npm run publish
+      - run: npm publish --provenance # should be public for not scoped packages and private for scoped packages by default
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

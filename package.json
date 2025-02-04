@@ -15,10 +15,10 @@
     "lint": "eslint ./src",
     "prettify": "prettier . --write",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "prepare": "husky",
     "stage-updated": "git add -u",
-    "publish": "npm publish --provenance --access public",
-    "prepare-release": "npm run typecheck && npm run lint && npm run test && npm run build"
+    "prepare-release": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "remove-husky": "rm -rf .husky && git config --unset core.hooksPath && npm remove husky && sed -i '/\"prepare\": \"husky\",/d' package.json",
+    "remove-publish-workflow": "rm -rf .github"
   },
   "keywords": [
     "[PACKAGE_KEYWORDS_HERE]"
