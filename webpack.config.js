@@ -1,17 +1,9 @@
 // webpack.config.js
-const path = require("path");
+import path from "path";
 
-module.exports = {
+const __dirname = path.resolve();
+export default {
   entry: "./src/index.ts",
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
-      },
-    ],
-  },
   resolve: {
     extensions: [".ts", ".js"],
   },
@@ -19,5 +11,21 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        use: {
+          loader: "ts-loader",
+          options: {
+            configFile: path.resolve(__dirname, "tsconfig.prod.json"),
+          },
+        },
+      },
+    ],
+  },
+  optimization: {
+    usedExports: false, // disable tree-shaking so that all exports are included
   },
 };

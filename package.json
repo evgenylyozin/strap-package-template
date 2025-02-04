@@ -2,6 +2,9 @@
   "name": "[PACKAGE_NAME_HERE]",
   "version": "0.0.0",
   "description": "[PACKAGE_DESCRIPTION_HERE]",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "[REPOSITORY_URL_HERE]"
@@ -11,7 +14,7 @@
     "test": "vitest run",
     "lint": "eslint ./src",
     "prettify": "prettier . --write",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "prepare": "husky",
     "stage-updated": "git add -u",
     "publish": "npm publish --provenance --access public",
