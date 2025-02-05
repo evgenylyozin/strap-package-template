@@ -27,6 +27,10 @@ Run:
 npm run remove-publish-workflow
 ```
 
+### If the license of the project is not MIT
+
+Remove the LICENSE file
+
 ### Publish to NPM workflow setup
 
 If you chose to include npm publish workflow then for it to work properly do the following steps:
