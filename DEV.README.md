@@ -32,24 +32,20 @@ Make changes in src/index.ts and then run:
 npm run test
 ```
 
-## To check types, lint, build dist files
+## To check types, lint, test and build dist files
 
 ```bash
 npm run prepare-release
 ```
 
-## Pre commit hook
+## Pre commit hook [REMOVE IF HUSKY WAS REMOVED]
 
 Before commit is done, the precommit hook should run which is managed by husky
 (.husky/pre-commit). It essentially fixes prettify issues, adds formatted files
 to staged if any, checks types, lints, tests, builds. If all is good => the commit
 happens.
 
-It works if the prepare script was called on npm install (which should be done automatically).
-If it was called it runs the husky init script which among other things changes the
-source for github hooks to be in the .husky folder.
-
-## Publishing to NPM
+## Publishing to NPM [REMOVE IF WORKFLOW WAS REMOVED]
 
 To publish new version of the package to npm there is a CI/CD script in the .github/workflows
 folder. It is triggered only if a new release is created on the github platform.

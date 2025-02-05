@@ -19,6 +19,8 @@ Run:
 npm run remove-husky
 ```
 
+Then remove the corresponding section from DEV.README.md
+
 ### If the publish to npm workflow is not needed
 
 Run:
@@ -26,6 +28,8 @@ Run:
 ```bash
 npm run remove-publish-workflow
 ```
+
+Then remove the corresponding section from DEV.README.md
 
 ### If the license of the project is not MIT
 
