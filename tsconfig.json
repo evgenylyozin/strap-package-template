@@ -3,10 +3,10 @@
     "isolatedModules": true,
     "allowJs": true,
     "target": "es6",
-    "moduleResolution": "nodenext",
-    "module": "NodeNext",
+    "moduleResolution": "bundler",
+    "module": "ESNext",
     "strict": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist", "*.config*"]
 }
