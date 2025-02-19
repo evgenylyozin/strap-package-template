@@ -3,13 +3,13 @@
     "isolatedModules": true,
     "allowJs": true,
     "target": "ES6",
-    "moduleResolution": "node16",
-    "module": "Node16",
+    "moduleResolution": "nodenext",
+    "module": "NodeNext",
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
     "declarationDir": "dist",
     "outDir": "dist"
   },
-  "exclude": ["node_modules", "dist", "*.config*", "tests"]
+  "exclude": ["node_modules", "dist", "*config*"]
 }

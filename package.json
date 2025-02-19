@@ -10,7 +10,7 @@
     "url": "[REPOSITORY_URL_HERE]"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --p tsconfig.prod.json",
     "test": "vitest run",
     "lint": "eslint ./src",
     "prettify": "prettier . --write",
