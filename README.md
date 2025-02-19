@@ -4,7 +4,7 @@ Explain what the package is about. What it is useful for in general terms.
 
 ## Installation
 
-How to install your package
+How to install the package
 
 ## Usage
 

@@ -3,8 +3,8 @@
     "isolatedModules": true,
     "allowJs": true,
     "target": "ES6",
-    "moduleResolution": "nodenext",
-    "module": "NodeNext",
+    "moduleResolution": "node16",
+    "module": "Node16",
     "strict": true,
     "esModuleInterop": true
   },
