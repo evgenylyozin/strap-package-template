@@ -10,11 +10,11 @@
     "url": "[REPOSITORY_URL_HERE]"
   },
   "scripts": {
-    "build": "tsc --project tsconfig.prod.json",
+    "build": "tsc",
     "test": "vitest run",
     "lint": "eslint ./src",
     "prettify": "prettier . --write",
-    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "typecheck": "tsc --noEmit",
     "stage-updated": "git add -u",
     "prepare-release": "npm run typecheck && npm run lint && npm run test && npm run build",
     "remove-husky": "rm -rf .husky && git config --unset core.hooksPath && npm remove husky && sed -i '/\"prepare\": \"husky\",/d' package.json",

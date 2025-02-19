@@ -6,7 +6,10 @@
     "moduleResolution": "node16",
     "module": "Node16",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist"
   },
-  "exclude": ["node_modules", "dist", "*.config*"]
+  "exclude": ["node_modules", "dist", "*.config*", "tests"]
 }
